@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SerbisyoNV | One app. Every service. Nueva Vizcaya.</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="description" content="One app. Every service. Nueva Vizcaya. Book rides and order food from trusted local providers.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SerbisyoNV | One app. Every service. Nueva Vizcaya.">
+  <meta property="og:description" content="Easy access to public services. Convenient. Transparent. For a better Nueva Vizcaya.">
+  <meta property="og:image" content="https://serbisyonv.vercel.app/images/hero.jpg">
+  <meta property="og:url" content="https://serbisyonv.vercel.app">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Switches (CSS lang, walang JavaScript) -->
+  <input type="checkbox" id="theme-toggle" class="switch">
+  <input type="checkbox" id="menu-toggle" class="switch">
+  <input type="checkbox" id="profile-toggle" class="switch">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <a href="#home" class="brand">
+      <img src="images/logo.png" alt="SerbisyoNV logo">
+      <span class="brand-text">Serbisyo<b>NV</b></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+
+      <label for="theme-toggle" class="icon-btn theme-btn">
+        <span class="sun">☀</span><span class="moon">☾</span>
+      </label>
+
+      <div class="profile">
+        <label for="profile-toggle" class="icon-btn profile-btn">
+          <svg viewBox="0 0 24 24" width="22" height="22">
+            <circle cx="12" cy="8" r="4" fill="currentColor"/>
+            <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z" fill="currentColor"/>
+          </svg>
+        </label>
+        <div class="dropdown">
+          <a href="#login">Login</a>
+          <a href="#register">Register</a>
+        </div>
+      </div>
+
+      <label for="menu-toggle" class="icon-btn menu-btn"><span></span></label>
+
+    </div>
+  </header>
+  
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+            <div class="hero-slides">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="hero-text">
+        <p class="tagline">One app. Every service. Nueva Vizcaya.</p>
+        <h1>Easy Access to Public Services</h1>
+        <p class="lead">Convenient. Transparent. For a Better Nueva Vizcaya.</p>
+
+        <div class="hero-buttons">
+          <a href="#services" class="btn btn-primary">Get Started</a>
+          <a href="#about" class="btn btn-ghost">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Book trusted local providers in Bayombong, Solano, and Bambang.</p>
+
+      <div class="cards">
+
+        <article class="card">
+                <div class="card-icon"><img src="images/transportation.png" alt=""></div>
+          <h3>Transportation</h3>
+          <p>Book tricycle rides, terminal pick-ups, and late-night trips from verified drivers.</p>
+          <a href="#login" class="card-link">Book a ride</a>
+        </article>
+
+        <article class="card">
+                 <div class="card-icon"><img src="images/food-delivery.png" alt=""></div>
+          <h3>Food Delivery</h3>
+          <p>Order from local restaurants, milk tea shops, and the palengke, delivered to your door.</p>
+          <a href="#login" class="card-link">Order food</a>
+        </article>
+
+        <article class="card card-soon">
+          <span class="badge">Coming soon</span>
+              <div class="card-icon"><img src="images/technical-services.png" alt=""></div>
+          <h3>Technical Services</h3>
+          <p>Computer repair, printer troubleshooting, and phone help from local experts.</p>
+        </article>
+
+        <article class="card card-soon">
+          <span class="badge">Coming soon</span>
+               <div class="card-icon"><img src="images/home-services.png" alt=""></div>
+          <h3>Home Services</h3>
+          <p>Plumbing, electrical repair, carpentry, and aircon cleaning at home.</p>
+        </article>
+
+      </div>
+    </section>
+    
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section section-alt">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-sub">Three simple steps to get the service you need.</p>
+
+      <div class="steps">
+
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Create an account</h3>
+          <p>Sign up with your name and phone number. It only takes a minute.</p>
+        </div>
+
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>Choose a service</h3>
+          <p>Pick a ride or a meal, and see verified providers near you.</p>
+        </div>
+
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Book and rate</h3>
+          <p>Confirm your booking, pay in cash, GCash, or Maya, then rate your provider.</p>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="about">
+
+        <div class="about-text">
+          <h2 class="section-title">About SerbisyoNV</h2>
+          <p>SerbisyoNV is one app for the everyday services people in Nueva Vizcaya need. We start in Bayombong, Solano, and Bambang.</p>
+          <p>We connect residents with trusted local providers, so you can book a ride or order a meal without long waits or guessing the price.</p>
+          <a href="#services" class="btn btn-primary">See our services</a>
+        </div>
+
+        <div class="values">
+          <div class="value">
+            <h3>Convenient</h3>
+            <p>Everything you need is in one place, on your phone or computer.</p>
+          </div>
+          <div class="value">
+            <h3>Transparent</h3>
+            <p>Clear prices and verified providers, with no hidden surprises.</p>
+          </div>
+          <div class="value">
+            <h3>For Nueva Vizcaya</h3>
+            <p>Built for local people, and it helps local businesses grow.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- FAQS -->
+    <section id="faqs" class="section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Quick answers to common questions.</p>
+
+      <div class="faq">
+
+        <details>
+          <summary>What is SerbisyoNV?</summary>
+          <p>SerbisyoNV is one app for everyday services in Nueva Vizcaya, like rides and food delivery from trusted local providers.</p>
+        </details>
+
+        <details>
+          <summary>Where is it available?</summary>
+          <p>We start in Bayombong, Solano, and Bambang. More towns will come later.</p>
+        </details>
+
+        <details>
+          <summary>How do I book a ride or order food?</summary>
+          <p>Create an account, choose a service, then confirm your booking. You can rate your provider after.</p>
+        </details>
+
+        <details>
+          <summary>How do I pay?</summary>
+          <p>You can pay in cash, GCash, or Maya.</p>
+        </details>
+
+        <details>
+          <summary>Are the providers verified?</summary>
+          <p>Yes. Providers are checked before they join, so you know who you are booking.</p>
+        </details>
+
+        <details>
+          <summary>When will Technical and Home Services start?</summary>
+          <p>They are coming soon. We will add them after Transportation and Food Delivery.</p>
+        </details>
+
+      </div>
+    </section>
+    
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Have a question or a suggestion? Send us a message.</p>
+
+      <div class="contact">
+
+        <div class="contact-info">
+          <div class="value">
+            <h3>Location</h3>
+            <p>Bayombong, Nueva Vizcaya</p>
+          </div>
+          <div class="value">
+            <h3>Email</h3>
+            <p>serbisyonv@gmail.com</p>
+          </div>
+          <div class="value">
+            <h3>Phone</h3>
+            <p>09611394471</p>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#sent" method="get">
+          <label for="c-name">Your name</label>
+          <input id="c-name" type="text" placeholder="Username" required>
+
+          <label for="c-email">Email</label>
+          <input id="c-email" type="email" placeholder="Email" required>
+
+          <label for="c-msg">Message</label>
+          <textarea id="c-msg" rows="5" placeholder="How can we help?" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+  
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-name">Serbisyo<b>NV</b></span>
+        <p>One app. Every service. Nueva Vizcaya.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login</a>
+      </nav>
+    </div>
+
+    <p class="footer-copy">© 2026 SerbisyoNV. All rights reserved.</p>
+  </footer>
+  
+  <!-- LOGIN -->
+  <div id="login" class="modal">
+    <a href="#home" class="modal-bg" aria-label="Close"></a>
+    <div class="modal-box">
+      <a href="#home" class="modal-close" aria-label="Close">×</a>
+      <h2>Welcome back</h2>
+      <p class="modal-sub">Login to book a ride or order food.</p>
+
+      <form action="#welcome" method="get">
+        <label for="login-phone">Phone number</label>
+        <input id="login-phone" type="tel" placeholder="09000000000" required>
+
+        <label for="login-pass">Password</label>
+        <input id="login-pass" type="password" placeholder="Your password" required>
+
+        <button type="submit" class="btn btn-primary btn-full">Login</button>
+      </form>
+
+      <p class="modal-switch">No account yet? <a href="#register">Register</a></p>
+    </div>
+  </div>
+
+  <!-- REGISTER -->
+  <div id="register" class="modal">
+    <a href="#home" class="modal-bg" aria-label="Close"></a>
+    <div class="modal-box">
+      <a href="#home" class="modal-close" aria-label="Close">×</a>
+      <h2>Create your account</h2>
+      <p class="modal-sub">It only takes a minute.</p>
+
+      <form action="#welcome" method="get">
+        <label for="reg-name">Full name</label>
+        <input id="reg-name" type="text" placeholder="Username" required>
+
+        <label for="reg-phone">Phone number</label>
+        <input id="reg-phone" type="tel" placeholder="090000000000" required>
+
+        <label for="reg-pass">Password</label>
+        <input id="reg-pass" type="password" placeholder="At least 6 characters" minlength="6" required>
+
+        <button type="submit" class="btn btn-primary btn-full">Register</button>
+      </form>
+
+      <p class="modal-switch">Already have an account? <a href="#login">Login</a></p>
+    </div>
+  </div>
+
+  <!-- WELCOME -->
+  <div id="welcome" class="modal">
+    <a href="#home" class="modal-bg" aria-label="Close"></a>
+    <div class="modal-box modal-center">
+      <div class="check">✓</div>
+      <h2>You're all set!</h2>
+      <p class="modal-sub">Demo lang to idol</p>
+      <a href="#services" class="btn btn-primary btn-full">Go to services</a>
+    </div>
+  </div>
+  
+  <!-- MESSAGE SENT -->
+  <div id="sent" class="modal">
+    <a href="#home" class="modal-bg" aria-label="Close"></a>
+    <div class="modal-box modal-center">
+      <div class="check">✓</div>
+      <h2>Message sent!</h2>
+      <p class="modal-sub">Thank you for reaching out. This is a demo page, so the message was not actually sent.</p>
+      <a href="#home" class="btn btn-primary btn-full">Back to home</a>
+    </div>
+  </div>
+</body>
+</html>
