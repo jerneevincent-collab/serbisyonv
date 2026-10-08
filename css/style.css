@@ -1,4 +1,4 @@
-
+ 
 :root {
   --green:  #1B5E20;
   --lime:   #C6D64A;
@@ -402,7 +402,7 @@ a {
   object-fit: contain;
 }
 
-/* Dark mode: sa darkmode ginagawa niyang puti yung madilim na icon para makita */
+/* sa darkmode ginagawa niyang puti yung madilim na icon para makita */
 :root:has(#theme-toggle:checked) .card-icon img {
   filter: brightness(0) invert(1);
 }
@@ -487,7 +487,7 @@ a {
   margin-top: 4px;
 }
 
-/* Pop-ups (Login, Register, Welcome) */
+/*  (Login, Register, Welcome) */
 .modal {
   position: fixed;
   inset: 0;
@@ -724,7 +724,7 @@ a {
 }
 
 
-/* Hamburger icon (☰ nagiging ✕ kapag nakabukas) */
+/* sa hamburger icon nagiging x kapag nakabukas) */
 .menu-btn span,
 .menu-btn span::before,
 .menu-btn span::after {
@@ -854,4 +854,56 @@ a {
   .footer-top {
     flex-direction: column;
   }
+}
+/* Become a provider banner */
+.provider {
+  padding: 20px clamp(16px, 5vw, 56px) 40px;
+}
+
+.provider-box {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: linear-gradient(135deg, #1B5E20, #2E7D32);
+  color: #FFFFFF;
+  border-radius: 24px;
+  padding: 40px clamp(24px, 4vw, 48px);
+}
+
+.provider-box::after {
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: -60px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(244, 196, 48, 0.25);
+}
+
+.provider-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.provider-box h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.provider-box p {
+  margin-top: 6px;
+  max-width: 520px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.btn-light {
+  background: var(--lime);
+  color: #12261A;
 }
