@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Switches (CSS lang, walang JavaScript) -->
+
   <input type="checkbox" id="theme-toggle" class="switch">
   <input type="checkbox" id="menu-toggle" class="switch">
   <input type="checkbox" id="profile-toggle" class="switch">
@@ -77,15 +77,45 @@
       </div>
       <div class="hero-text">
         <p class="tagline">One app. Every service. Nueva Vizcaya.</p>
-        <h1>Easy Access to Public Services</h1>
+       <h1>Easy Access to <span class="hl">Public Services</span></h1>
         <p class="lead">Convenient. Transparent. For a Better Nueva Vizcaya.</p>
 
         <div class="hero-buttons">
           <a href="#services" class="btn btn-primary">Get Started</a>
           <a href="#about" class="btn btn-ghost">Learn more</a>
         </div>
+
+  
       </div>
     </section>
+       <!-- MOVING STRIP: scrolls sideways without stopping -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+
+        <div class="marquee-group">
+          <span>Convenient</span>
+          <span>Transparent</span>
+          <span>Trusted Providers</span>
+          <span>Clear Prices</span>
+          <span>Easy Booking</span>
+          <span>Rate Your Provider</span>
+          <span>Local First</span>
+          <span>Built for Nueva Vizcaya</span>
+        </div>
+
+        <div class="marquee-group">
+          <span>Convenient</span>
+          <span>Transparent</span>
+          <span>Trusted Providers</span>
+          <span>Clear Prices</span>
+          <span>Easy Booking</span>
+          <span>Rate Your Provider</span>
+          <span>Local First</span>
+          <span>Built for Nueva Vizcaya</span>
+        </div>
+
+      </div>
+    </div>
 
     <!-- SERVICES -->
     <section id="services" class="section">
@@ -181,8 +211,42 @@
 
       </div>
     </section>
-    
-        <!-- PROVIDER BANNER -->
+
+        <!-- AREAS WE SERVE -->
+    <section id="areas" class="section">
+      <h2 class="section-title">Areas We Serve</h2>
+      <p class="section-sub">SerbisyoNV starts in three towns of Nueva Vizcaya.</p>
+
+      <div class="areas">
+
+        <article class="area">
+          <img src="images/hero.jpg" alt="Bayombong, Nueva Vizcaya">
+          <div class="area-text">
+            <h3>Solano</h3>
+            <p>Rides and food delivery</p>
+          </div>
+        </article>
+
+        <article class="area">
+          <img src="images/hero-2.jpg" alt="Solano, Nueva Vizcaya">
+          <div class="area-text">
+            <h3>Bayombong</h3>
+            <p>Rides and food delivery</p>
+          </div>
+        </article>
+
+        <article class="area">
+          <img src="images/hero-3.jpg" alt="Bambang, Nueva Vizcaya">
+          <div class="area-text">
+            <h3>Bambang</h3>
+            <p>Rides and food delivery</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+   
+        <!-- PROVIDER BANNER: invites drivers and shop owners to join -->
     <section class="provider">
       <div class="provider-box">
         <div>
@@ -357,9 +421,12 @@
     <div class="modal-box modal-center">
       <div class="check">✓</div>
       <h2>Message sent!</h2>
-      <p class="modal-sub">Thank you for reaching out. This is a demo page, so the message was not actually sent.</p>
+      <p class="modal-sub">Thank you idol. demo lang po.</p>
       <a href="#home" class="btn btn-primary btn-full">Back to home</a>
     </div>
   </div>
+  
+  <!-- BACK TO TOP BUTTON: appears after you scroll down -->
+  <a href="#home" class="to-top" aria-label="Back to top">↑</a>
 </body>
 </html>
