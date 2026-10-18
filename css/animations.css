@@ -1,4 +1,3 @@
-
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--green) var(--bg-alt);
@@ -19,7 +18,7 @@ body {
   outline-offset: 3px;
   border-radius: 6px;
 }
-
+/*  SHARED KEYFRAMES  */
 @keyframes from-left  { from { opacity: 0; translate: -60px 0; } }
 @keyframes from-right { from { opacity: 0; translate: 60px 0; } }
 @keyframes flip-up    { from { opacity: 0; translate: 0 50px; rotate: 1 0 0 35deg; } }
@@ -29,7 +28,7 @@ body {
 @keyframes float-y    { from { translate: 0 -18px; } to { translate: 0 22px; } }
 @keyframes fade-in    { to { opacity: 1; } }
 
-/* mas malaki yung slides para may buffer sa parallax */
+/*  HERO  */
 .hero-slides {
   inset: -120px 0;
 }
@@ -102,10 +101,9 @@ body {
   .hero::after { opacity: 0.6; }
 }
 
-/* hero, navbar, titles */
+/*  hero, navbar, titles */
 @supports (animation-timeline: scroll()) {
 
-  /* gumagalaw yung picture habang nag sscroll */
   .hero-slides {
     animation: kenburns 24s ease-in-out infinite alternate, hero-parallax linear both;
     animation-timeline: auto, scroll(root);
@@ -116,7 +114,6 @@ body {
     to { translate: 0 100px; }
   }
 
-  /* nawawala yung hero ng text habang nag sscroll*/
   .hero-text {
     animation: hero-out linear both;
     animation-timeline: view();
@@ -127,7 +124,7 @@ body {
     to { opacity: 0; translate: 0 -60px; }
   }
 
-  /* ung navbar lumiliit kapag nag sscroll */
+  /* nlimiliit yung navbar pag nagsscroll */
   .navbar {
     animation: nav-shrink linear both;
     animation-timeline: scroll(root);
@@ -156,6 +153,7 @@ body {
     .navbar, .brand { animation: none; }
   }
 
+  /* yellow bar sa title lumalaki habang nag sscroll */
   .section-title::after {
     animation: bar-grow linear both;
     animation-timeline: view();
@@ -184,7 +182,7 @@ body {
     animation-range: entry 0% entry 55%;
   }
 
-  /* stagger: sunod-sunod ang labas */
+
   .card:nth-child(2), .step:nth-child(2), .area:nth-child(2), .value:nth-child(2), .stat:nth-child(2) {
     animation-range: entry 6% entry 52%;
   }
@@ -195,7 +193,6 @@ body {
     animation-range: entry 18% entry 64%;
   }
 
-  /* picture sa loob ng area card gumagalaw (parallax) */
   .area img {
     animation: img-drift linear both;
     animation-timeline: view();
@@ -207,7 +204,7 @@ body {
     to   { translate: 0 6%;  scale: 1.15; }
   }
 
-  /* sa provider banner nag zoom in tas gumagalaw na gradient */
+  /* sa provider banner nag zzoom in tas gumagalaw na gradient */
   .provider-box {
     animation: zoom-in linear both, gradient-shift 10s ease-in-out infinite alternate;
     animation-timeline: view(), auto;
@@ -222,7 +219,7 @@ body {
     animation-range: entry 0% entry 80%;
   }
 
-  /* may line sa mga texts */
+  /* may line yung mga text */
   .steps::before {
     animation: draw-line linear both;
     animation-timeline: view();
@@ -265,7 +262,7 @@ body {
 }
 
 .stat-num {
-  --n: var(--to);              
+  --n: var(--to);             
   display: block;
   counter-reset: n var(--n);
   font-size: clamp(2.6rem, 6vw, 4rem);
@@ -346,7 +343,6 @@ body {
   perspective: 1000px;
 }
 
-/* lalawak yung hover */
 .card::before {
   content: "";
   position: absolute;
@@ -394,7 +390,7 @@ body {
   50%      { box-shadow: 0 0 0 10px rgba(244, 196, 48, 0); }
 }
 
-/* VALUES */
+/*  VALUES  */
 .value {
   transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s, background-color 0.4s, color 0.4s;
 }
@@ -405,7 +401,7 @@ body {
   box-shadow: 0 14px 30px rgba(15, 61, 20, 0.14);
 }
 
-/* AREAS  */
+/*  AREAS  */
 .area-text {
   transition: translate 0.3s ease;
 }
@@ -416,7 +412,7 @@ body {
 
 .section-alt {
   position: relative;
-  overflow: hidden;
+  overflow: clip;   
 }
 
 .section-alt > * {
@@ -451,7 +447,7 @@ body {
   animation: float-y 12s ease-in-out infinite alternate-reverse;
 }
 
-/* PROVIDER BANNER  */
+/*  PROVIDER BANNER  */
 .provider-box {
   background: linear-gradient(120deg, #1B5E20, #2E7D32, #3B8A2F, #1B5E20);
   background-size: 300% 300%;
@@ -483,7 +479,7 @@ body {
   to { scale: 1.35; opacity: 0.6; }
 }
 
-/* BUTTONS  */
+/*  BUTTONS / BRAND  */
 .btn:active {
   scale: 0.96;
 }
@@ -500,7 +496,7 @@ body {
   rotate: -8deg;
 }
 
-/* smooth kpag inopen profile dropdown*/
+/*  sa profile dropdown smooth siya pag bukas sara */
 .dropdown {
   display: block;
   visibility: hidden;
@@ -518,7 +514,7 @@ body {
   scale: 1;
 }
 
-/*MOBILE MENU  */
+/*  MOBILE MENU  */
 @media (max-width: 800px) {
   .nav-links {
     opacity: 0;
@@ -578,7 +574,7 @@ body {
   rotate: 90deg;
 }
 
-/*  FAQ  */
+/*  FAQ   */
 .faq details::details-content {
   block-size: 0;
   overflow: hidden;
@@ -609,7 +605,7 @@ body {
   rotate: 180deg;
 }
 
-/* FOOTER LINKS  */
+/*  FOOTER LINKS  */
 .footer-links a {
   position: relative;
 }
@@ -632,6 +628,7 @@ body {
   transform: scaleX(1);
 }
 
+/*  BACK TO TOP  */
 .to-top::after {
   content: "";
   position: absolute;
@@ -686,7 +683,7 @@ body {
   display: none;
 }
 
-/* sa mga sides nung logo */
+/* sa sides ng logo may whitey */
 .loader-logo {
   filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 18px rgba(255, 255, 255, 0.45));
 }
@@ -716,7 +713,7 @@ body {
 }
 
 .card::before {
-  display: none;
+  display: none; 
 }
 
 .card:not(.card-soon)::after {
@@ -750,7 +747,7 @@ body {
 
 .app-box {
   position: relative;
-  overflow: hidden;
+  overflow: clip;   
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
@@ -871,7 +868,7 @@ body {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
-/* logo  ios android*/
+/* logo ng ios tas android*/
 .store img {
   width: 44px;
   height: 44px;
@@ -1170,6 +1167,7 @@ body {
   white-space: nowrap;
 }
 
+/* lumulutang yung chips sa sa side ng phone */
 .chip {
   position: absolute;
   z-index: 2;
@@ -1208,7 +1206,7 @@ body {
   .phone-stage { min-height: 460px; }
 }
 
-/*  MAP NG AREAS  */
+/*   MAP NG AREAS  */
 .map-wrap {
   display: grid;
   grid-template-columns: minmax(260px, 1fr) minmax(300px, 1.4fr);
@@ -1276,7 +1274,7 @@ body {
 .map-card {
   position: relative;
   aspect-ratio: 4 / 3;
-  overflow: hidden;
+  overflow: clip;   
   border: 1px solid var(--border);
   border-radius: 24px;
   background: radial-gradient(circle at 30% 20%, var(--accent-soft), var(--surface));
@@ -1394,7 +1392,7 @@ body {
   color: var(--muted);
 }
 
-/* TRICYCLE  */
+/*   TRICYCLE   */
 :root { --tri-w: 124px; }
 
 @media (max-width: 700px) {
@@ -1409,7 +1407,7 @@ body {
 .route-hills {
   position: relative;
   height: 120px;
-  overflow: hidden;
+  overflow: clip;   
 }
 
 .route-hills::before,
@@ -1530,7 +1528,6 @@ body {
 
 @supports (animation-timeline: view()) {
 
-
   .route-hills::before {
     animation: hills-far linear both;
     animation-timeline: view();
@@ -1546,7 +1543,7 @@ body {
   @keyframes hills-far  { to { translate: -4% 0; } }
   @keyframes hills-near { to { translate: -7% 0; } }
 
- 
+  /* gagalaw yung tricy pag nag sscroll */
   .trike {
     animation: trike-go linear both;
     animation-timeline: view();
@@ -1557,6 +1554,7 @@ body {
     to { left: calc(100% - var(--tri-w)); }
   }
 
+  /* umiikot yung gulong pag nag sscroll */
   .wheel {
     animation: wheel-spin linear both;
     animation-timeline: view();
@@ -1567,6 +1565,7 @@ body {
     to { rotate: 1440deg; }
   }
 
+  /* gumagalaw yung line sa daan */
   .road::before {
     animation: road-move linear both;
     animation-timeline: view();
@@ -1654,7 +1653,7 @@ body {
   stroke-dashoffset: 0;
 }
 
-/* sa footer may malaking sebisyonv */
+/*  malaking serbisyonv sa baba */
 .footer-mega {
   margin: 36px 0 -0.08em;
   font-size: clamp(3.2rem, 15vw, 13rem);
@@ -1698,7 +1697,12 @@ body {
   .panel-ride { opacity: 1; }
 }
 
-/*  REDUCED MOTION */
+.hero,
+.area {
+  overflow: clip;
+}
+
+/*  REDUCED MOTION  */
 @media (prefers-reduced-motion: reduce) {
   .loading-screen {
     display: none;
