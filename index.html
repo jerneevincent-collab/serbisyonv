@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
 
@@ -117,12 +118,15 @@
         <div class="hero-buttons">
           <a href="#services" class="btn btn-primary">Get Started</a>
           <a href="#about" class="btn btn-ghost">Learn more</a>
+
         </div>
+
+    </section>
 
   
       </div>
     </section>
-       <!-- MOVING STRIP: scrolls sideways without stopping -->
+          <!-- MOVING STRIP: scrolls sideways without stopping -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
 
@@ -150,6 +154,14 @@
 
       </div>
     </div>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="SerbisyoNV at a glance">
+      <div class="stat"><span class="stat-num" style="--to:3"></span><p>Towns served</p></div>
+      <div class="stat"><span class="stat-num" style="--to:2"></span><p>Services live</p></div>
+      <div class="stat"><span class="stat-num" style="--to:2"></span><p>Coming soon</p></div>
+      <div class="stat"><span class="stat-num" style="--to:3"></span><p>Ways to pay</p></div>
+    </section>
 
     <!-- SERVICES -->
     <section id="services" class="section">
@@ -216,7 +228,98 @@
 
       </div>
     </section>
-    
+
+     <!-- APP PREVIEW -->
+    <section id="app" class="section">
+      <div class="app-box">
+ 
+        <div class="app-text">
+          <span class="app-tag">Mobile app</span>
+          <h2>SerbisyoNV in your pocket</h2>
+          <p>Book a ride or order food in a few taps. The mobile app is on the way.</p>
+ 
+          <ul class="app-points">
+            <li>Book tricycle rides in a few taps</li>
+            <li>Order from local shops and the palengke</li>
+            <li>Pay in cash, GCash, or Maya</li>
+          </ul>
+ 
+          <div class="store-row">
+            <div class="store">
+              <img src="images/android-icon.png" alt="">
+              <span><small>Coming soon</small><b>Android</b></span>
+            </div>
+            <div class="store">
+              <img src="images/ios-icon.png" alt="">
+              <span><small>Coming soon</small><b>iPhone</b></span>
+            </div>
+          </div>
+ 
+          <a href="#register" class="btn btn-light">Use the web version now</a>
+        </div>
+ 
+        <div class="phone-stage" aria-hidden="true">
+ 
+          <div class="chip chip-1"><i>✓</i> Ride booked</div>
+          <div class="chip chip-2"><i>★</i> Rate your provider</div>
+          <div class="chip chip-3"><i>●</i> Order on the way</div>
+ 
+          <div class="phone">
+            <span class="notch"></span>
+            <div class="screen">
+ 
+              <!-- screen 1: ride -->
+              <div class="screen-panel panel-ride">
+                <div class="s-top">
+                  <span class="s-logo">Serbisyo<b>NV</b></span>
+                  <span class="s-avatar"></span>
+                </div>
+                <p class="s-hello">Where to?</p>
+                <div class="s-search">Bayombong Terminal</div>
+                <div class="s-map">
+                  <span class="s-pin"></span>
+                  <span class="s-dot"></span>
+                </div>
+                <div class="s-card">
+                  <div><b>Tricycle</b><small>Driver is on the way</small></div>
+                  <span class="s-eta">3 min</span>
+                </div>
+                <div class="s-bar"><i></i></div>
+                <div class="s-btn">Confirm booking</div>
+              </div>
+ 
+              <!-- screen 2: food -->
+              <div class="screen-panel panel-food">
+                <div class="s-top">
+                  <span class="s-logo">Serbisyo<b>NV</b></span>
+                  <span class="s-avatar"></span>
+                </div>
+                <p class="s-hello">Hungry?</p>
+                <div class="s-search">Milk tea, silog, ulam...</div>
+                <div class="s-tiles">
+                  <span class="tile">Milk tea</span>
+                  <span class="tile">Silog</span>
+                  <span class="tile">Palengke</span>
+                </div>
+                <div class="s-item">
+                  <div><b>Milk tea shop</b><small>Delivering to you</small></div>
+                  <span class="s-pill">Open now</span>
+                </div>
+                <div class="s-item">
+                  <div><b>Local restaurant</b><small>Delivering to you</small></div>
+                  <span class="s-pill">Open now</span>
+                </div>
+                <div class="s-bar"><i></i></div>
+                <div class="s-btn">Place order</div>
+              </div>
+ 
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </section>
+ 
     <!-- ABOUT -->
     <section id="about" class="section">
       <div class="about">
@@ -246,37 +349,115 @@
       </div>
     </section>
 
-        <!-- AREAS WE SERVE -->
+     
+     <!-- AREAS WE SERVE -->
     <section id="areas" class="section">
       <h2 class="section-title">Areas We Serve</h2>
       <p class="section-sub">SerbisyoNV starts in three towns of Nueva Vizcaya.</p>
-
-      <div class="areas">
-
-        <article class="area">
-          <img src="images/hero.jpg" alt="Bayombong, Nueva Vizcaya">
-          <div class="area-text">
-            <h3>Solano</h3>
-            <p>Rides and food delivery</p>
+ 
+      <div class="map-wrap">
+ 
+        <div class="map-list">
+          <a href="#services" class="area-item is-solano">
+            <span class="area-num">1</span>
+            <div>
+              <h3>Solano</h3>
+              <p>Rides and food delivery</p>
+            </div>
+          </a>
+          <a href="#services" class="area-item is-bayombong">
+            <span class="area-num">2</span>
+            <div>
+              <h3>Bayombong</h3>
+              <p>Rides and food delivery</p>
+            </div>
+          </a>
+          <a href="#services" class="area-item is-bambang">
+            <span class="area-num">3</span>
+            <div>
+              <h3>Bambang</h3>
+              <p>Rides and food delivery</p>
+            </div>
+          </a>
+        </div>
+ 
+        <div class="map-card">
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <path class="map-contour" d="M-10 250 C 60 215, 110 270, 180 240 S 320 255, 410 215"/>
+            <path class="map-contour" d="M-10 205 C 70 170, 120 225, 190 195 S 330 210, 410 170"/>
+            <path class="map-contour" d="M-10 150 C 40 120, 100 165, 150 120 S 250 150, 300 105 S 380 120, 410 90"/>
+            <path class="map-contour" d="M-10 95 C 60 60, 110 100, 170 70 S 290 80, 410 40"/>
+            <path class="map-contour" d="M-10 40 C 50 20, 120 50, 180 25 S 300 30, 410 5"/>
+ 
+            <path class="map-route-base" pathLength="1" d="M232 66 C 200 90, 205 120, 176 144 S 190 200, 224 234"/>
+            <path class="map-route-dash" d="M232 66 C 200 90, 205 120, 176 144 S 190 200, 224 234"/>
+          </svg>
+ 
+          <span class="pin is-solano" style="--x:58%; --y:22%"><span class="pin-label">Solano</span></span>
+          <span class="pin is-bayombong" style="--x:44%; --y:48%"><span class="pin-label">Bayombong</span></span>
+          <span class="pin is-bambang" style="--x:56%; --y:78%"><span class="pin-label">Bambang</span></span>
+ 
+          <span class="map-compass">N</span>
+        
+        </div>
+ 
+      </div>
+    </section>
+ 
+    
+    <!-- ROUTE -->
+    <section id="route" class="section section-alt">
+      <h2 class="section-title">One Ride, Three Towns</h2>
+      <p class="section-sub">Scroll down and ride from Solano to Bayombong to Bambang.</p>
+ 
+      <div class="route-scene">
+ 
+        <div class="route-hills" aria-hidden="true"></div>
+ 
+        <div class="trike-lane" aria-hidden="true">
+          <div class="trike">
+            <svg viewBox="0 0 120 76" role="img" aria-label="Tricycle">
+              <!-- sidecar -->
+              <path class="t-roof" d="M6 26 Q8 14 22 14 H56 Q68 14 70 26 Z"/>
+              <rect class="t-body" x="8" y="26" width="62" height="28" rx="6"/>
+              <rect class="t-window" x="16" y="31" width="22" height="12" rx="3"/>
+              <rect class="t-window" x="42" y="31" width="20" height="12" rx="3"/>
+ 
+              <!-- motorbike -->
+              <path class="t-bike" d="M72 44 Q84 36 98 42 L106 54 L72 54 Z"/>
+              <rect class="t-dark" x="72" y="37" width="18" height="5" rx="2"/>
+              <path class="t-line" d="M98 42 L96 30 L104 28"/>
+              <path class="t-line" d="M100 42 L104 64"/>
+              <circle class="t-hub" cx="106" cy="44" r="3"/>
+ 
+              <!-- wheels -->
+              <g class="wheel">
+                <circle class="t-tire" cx="38" cy="64" r="10"/>
+                <circle class="t-hub" cx="38" cy="64" r="3.5"/>
+                <path class="t-spoke" d="M38 55 V73 M29 64 H47"/>
+              </g>
+              <g class="wheel">
+                <circle class="t-tire" cx="78" cy="64" r="10"/>
+                <circle class="t-hub" cx="78" cy="64" r="3.5"/>
+                <path class="t-spoke" d="M78 55 V73 M69 64 H87"/>
+              </g>
+              <g class="wheel">
+                <circle class="t-tire" cx="104" cy="64" r="10"/>
+                <circle class="t-hub" cx="104" cy="64" r="3.5"/>
+                <path class="t-spoke" d="M104 55 V73 M95 64 H113"/>
+              </g>
+            </svg>
           </div>
-        </article>
-
-        <article class="area">
-          <img src="images/hero-2.jpg" alt="Solano, Nueva Vizcaya">
-          <div class="area-text">
-            <h3>Bayombong</h3>
-            <p>Rides and food delivery</p>
-          </div>
-        </article>
-
-        <article class="area">
-          <img src="images/hero-3.jpg" alt="Bambang, Nueva Vizcaya">
-          <div class="area-text">
-            <h3>Bambang</h3>
-            <p>Rides and food delivery</p>
-          </div>
-        </article>
-
+        </div>
+ 
+        <div class="road" aria-hidden="true"></div>
+ 
+        <div class="route-stops">
+          <div class="stop"><span class="stop-dot"></span><span class="stop-name">Solano</span></div>
+          <div class="stop"><span class="stop-dot"></span><span class="stop-name">Bayombong</span></div>
+          <div class="stop"><span class="stop-dot"></span><span class="stop-name">Bambang</span></div>
+        </div>
+ 
       </div>
     </section>
    
@@ -387,6 +568,8 @@
         <a href="#login">Login</a>
       </nav>
     </div>
+
+ <p class="footer-mega" aria-hidden="true">SerbisyoNV</p>
 
     <p class="footer-copy">© 2026 SerbisyoNV. All rights reserved.</p>
   </footer>
